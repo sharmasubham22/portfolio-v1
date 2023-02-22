@@ -1,0 +1,150 @@
+:root {
+  --content-color:#c5c6c7;
+  --background:#1f2833;
+  --highlight-color:#66fcf1;
+  --highlight-color2: #45a29e;
+  --profile: url(../images/profileimgd.png);
+}
+
+[data-theme="dark"] {
+  --background:#ffffff;
+  --content-color:#1f2833;
+  --highlight-color:#45a29e;
+  --highlight-color2: #45a29e;
+  --profile: url(../images/profileimg.png);
+}
+
+.contact-div{
+  margin-top: 5%;
+  text-align: center;
+  font-family: Optima;
+  margin-left: 0%;
+ margin-top: 15%;
+ 
+}
+.contact{
+  margin-top: 5%;
+  display: flex;
+}
+
+.form{
+  display: flex;
+  width: 85%;
+  margin-left: 10%;
+  
+}
+
+.p-pic{
+  padding: 150px;
+  margin-right: -20%;
+  background-image: var(--profile);
+background-size: 300px;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.p-pic:hover{
+  transform: scale(1.1);
+}
+
+input{
+  display: block;
+  margin: 20px;
+}
+
+input::placeholder{
+  color: var(--highlight-color);
+  opacity: 0.5;
+}
+
+input:hover{
+  background-color: rgb(102, 252, 241,0.1);
+}
+
+textarea{
+  height: 30%;
+}
+
+textarea::placeholder{
+  color: var(--highlight-color);
+  opacity: 0.5;
+}
+
+textarea:hover{
+  background-color: rgb(102, 252, 241,0.1);
+}
+
+.con-head{
+  margin-left: 30%;
+  width: 40%;
+}
+
+.form-input{
+  width:100%;
+  padding: 15px;
+  font-family: Optima;
+  border: 1px solid var(--highlight-color);
+  background-color: var(--background);
+  color: var(--content-color);
+}
+
+.form-message{
+  width:100%;
+  padding: 15px;
+  margin:20px;
+  margin-top: 0;
+  font-family: Optima;
+  border: 1px solid var(--highlight-color);
+  background-color: var(--background);
+  color: var(--content-color);
+}
+
+.form-submit{
+  background-color:  var(--background);
+  border:1px solid var(--highlight-color);
+  width:30%;
+  padding: 10px;
+  font-size: large;
+  font-family: Optima;
+  transition: 0.3s;
+  margin-left: 60px;
+  color:var(--highlight-color);
+}
+
+.form-submit:hover{
+  color: var(--highlight-color);
+  background-color: rgb(102, 252, 241,0.1);
+}
+
+@media screen and (max-width: 500px){
+  .contact-div{
+    display: block;
+  }
+  .contact{
+  margin-top: 5%;
+  display: block;
+}
+.con-head{
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+  .form{
+    width: 80%;
+    margin-left: 0;
+  }
+  .p-pic{
+    margin-left: 10%;
+    padding: 150px
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 450px) {
+  .contact{
+    display: block;
+  }
+  .p-pic{
+    padding-right:0px ;
+    margin-left: 40%;
+  }
+}

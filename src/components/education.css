@@ -1,0 +1,117 @@
+:root {
+  --content-color:#c5c6c7;
+  --background:#1f2833;
+  --highlight-color:#66fcf1;
+  --highlight-color2: #45a29e;
+  --dal-logo:url(../images/dal1.png);
+  --chr-logo:url(../images/chr.png)
+}
+
+[data-theme="dark"] {
+  --background:#ffffff;
+  --content-color:#1f2833;
+  --highlight-color:#45a29e;
+  --highlight-color2: #45a29e;
+   --dal-logo:url(../images/dal.png);
+   --chr-logo:url(../images/chr1.png)
+}
+
+.edu{
+    margin-top: 9%;
+   
+}
+
+.content{
+    font-size: medium;
+}
+
+.education{
+    font-family: Optima;
+  text-align: center;
+  color: var(--highlight-color);
+}
+
+.dal-logo{
+    width:18em;
+    height:auto;
+    padding: 40px;
+    background-image: var(--dal-logo);
+    background-size: contain;
+}
+
+.christ-logo{
+   width:18em;
+    height:auto;
+    padding: 40px;
+    background-image: var(--chr-logo);
+    background-size: contain;
+}
+.uni-div{
+    border:1px solid var(--highlight-color);
+    margin: 5%;
+    width: 78%;
+    display: flex;
+    margin-left: 11%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.uni-content{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 3%;
+    width: 80%;
+    font-family: Optima;
+    border-left: 1px solid var(--highlight-color);
+    color: var(--content-color);
+}
+
+.prgm{
+    font-family: Optima;
+    text-align: center;
+      color: var(--highlight-color);
+}
+.uni-name{
+    font-family: Optima;
+    text-align: center;
+    color: var(--content-color);
+    font-size: large;
+}
+
+@media screen and (max-width: 500px){
+    .edu{
+        margin-top: 15%;
+    }
+.uni-div{
+    display:list-item;
+    width: 90%;
+    margin-left:5%;
+}
+
+.uni-content{
+    margin-left: 7%;
+    
+    border: none;
+}
+
+.dal-logo{
+    background-size: 100%;
+    background-repeat: no-repeat;
+   
+}
+
+.christ-logo{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+}
+
+@media (max-width: 1200px) and (min-width: 450px) {
+    .dal-logo{
+        background-repeat: no-repeat;
+    }
+    .christ-logo{
+        background-repeat: no-repeat;
+    }
+}

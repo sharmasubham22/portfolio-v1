@@ -1,0 +1,128 @@
+:root {
+  --content-color:#c5c6c7;
+  --background:#1f2833;
+  --highlight-color:#66fcf1;
+  --highlight-color2: #45a29e;
+}
+
+[data-theme="dark"] {
+  --background:#ffffff;
+  --content-color:#1f2833;
+  --highlight-color:#45a29e;
+  --highlight-color2: #45a29e;
+}
+
+.exp{
+    margin-top: 9%;
+   
+}
+
+.experience{
+    font-family: Optima;
+  text-align: center;
+  color: var(--highlight-color);
+}
+
+
+.container1 {
+   width: 80%;
+   padding: 50px 0;
+   margin: 50px auto;
+   position: relative;
+   overflow: hidden;
+}
+
+.container1:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 50%;
+   margin-left: -1px;
+   width: 2px;
+   height: 100%;
+   background: #CCD1D9;
+   z-index: 1
+}
+
+.position{
+    color: var(--highlight-color);
+}
+
+.timeline-block {
+   width: -webkit-calc(50% + 8px);
+   width: -moz-calc(50% + 8px);
+   width: calc(50% + 8px);
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: flex;
+   -webkit-box-pack: justify;
+   -webkit-justify-content: space-between;
+   -moz-box-pack: justify;
+   justify-content: space-between;
+   clear: both;
+}
+
+.timeline-block-right {
+   float: right;
+}
+
+.timeline-block-left {
+   float: left;
+   direction: rtl
+}
+
+.marker {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   border: 2px solid #F5F7FA;
+   background: var(--highlight-color2);
+   margin-top: 10px;
+   z-index: 999
+}
+
+.timeline-content {
+   width: 95%;
+   padding: 0 15px;
+   color: var(--content-color);
+}
+
+.timeline-content h3 {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 25px;
+   font-weight: 500
+}
+
+.timeline-content span {
+   font-size: 15px;
+   color: var(--highlight-color2);
+}
+
+.timeline-content p {
+   font-size: 14px;
+   line-height: 1.5em;
+   word-spacing: 1px;
+   color: var(--content-color);
+}
+
+
+@media screen and (max-width: 768px) {
+   .container1:before {
+      left: 8px;
+      width: 2px;
+   }
+   .timeline-block {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+   .timeline-block-right {
+      float: none;
+   }
+
+   .timeline-block-left {
+      float: none;
+      direction: ltr;
+   }
+}
