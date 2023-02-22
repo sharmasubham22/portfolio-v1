@@ -39,7 +39,7 @@ import './skills.css';
           </div>
           <div class="box box-down skill-type">
             <h2>Others</h2>
-            <p>OOPS , TDD , Android Studio , Git , JIRA , MS Office</p>
+            <p>OOPS , TDD , PowerBI, Android Studio , Git , JIRA , MS Office</p>
           </div>
         </div>
       </>
