@@ -57,7 +57,7 @@ function PHome() {
           <Skills />
         </section>
 
-//         <Contact />
+
 
         <p className="madeby">
           Made with <span style={{ color: "red" }}>&#9829;</span> by Subham
