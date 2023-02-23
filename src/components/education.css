@@ -94,15 +94,12 @@
 }
 
 .dal-logo{
-    background-size: 100%;
-    background-repeat: no-repeat;
+    display: none;
    
 }
 
 .christ-logo{
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    display: none;
 }
 
 }
